@@ -133,7 +133,7 @@ Evidencia fotográfica y en video disponible en [`/evidencias`](./evidencias).
 
 <video src="https://github.com/user-attachments/assets/REEMPLAZAR-video-carro-1" controls width="500"></video>
 
-📹 Archivo: [`evidencias/videos/deteccion_carro_1.mp4`](video1.mp4)
+📹 Archivo: [Video 1](video1.mp4)
 [`evidencias/videos/deteccion_carro_1.mp4`](video2.mp4)
 [`evidencias/videos/deteccion_carro_1.mp4`](video%203.mp4)
 
