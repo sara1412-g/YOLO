@@ -133,7 +133,7 @@ Evidencia fotográfica y en video disponible en [`/evidencias`](./evidencias).
 
 <video src="https://github.com/user-attachments/assets/REEMPLAZAR-video-carro-1" controls width="500"></video>
 
-📹 Archivo: [`evidencias/videos/deteccion_carro_1.mp4`](./evidencias/videos/deteccion_carro_1.mp4)
+📹 Archivo: [`evidencias/videos/deteccion_carro_1.mp4`](WhatsApp Image 2026-08-25 at 7.49.35 PM.jpeg.mp4)
 
 **Detección del carro de juguete (LED rojo encendido) — video 2**
 
