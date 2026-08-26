@@ -14,7 +14,7 @@ Universidad Militar Nueva Granada · Periodo 2026-2
 Este proyecto implementa un sistema de visión artificial capaz de diferenciar entre **carros** y **motocicletas** en tiempo real usando el modelo preentrenado **YOLOv8** (clases nativas de COCO), y de comunicar el resultado de la detección a un **ESP32** para encender un LED indicador:
 
 - 🔴 **LED rojo (GPIO 25)** → se enciende al detectar un **carro**.
-- 🟢 **LED verde (GPIO 26)** → se enciende al detectar una **moto**.
+- 🟢 **LED amarillo (GPIO 26)** → se enciende al detectar una **moto**.
 
 El repositorio contiene tres entregas relacionadas:
 
@@ -40,7 +40,7 @@ El repositorio contiene tres entregas relacionadas:
 ├── evidencias/
 │   ├── fotos/
 │   │   ├── deteccion_carro.jpg       # Detección de "car" + consola CARRO (LED Rojo ON)
-│   │   ├── deteccion_moto.png        # Detección de "motorcycle" + consola MOTO (LED Verde ON)
+│   │   ├── deteccion_moto.png        # Detección de "motorcycle" + consola MOTO (LED amarillo ON)
 │   │   └── montaje_fisico.png        # Protoboard con ESP32 y LED conectados
 │   └── videos/
 │       ├── deteccion_carro_1.mp4     # Video de demostración: carro (ángulo 1)
@@ -105,14 +105,14 @@ python deteccion.py
 1. Montar el circuito de LEDs en protoboard según la tabla de conexiones.
 2. Cargar el firmware en el ESP32 (Arduino/C++ o el equivalente MicroPython).
 3. Ejecutar `deteccion.py` y presentar el carro o la moto de juguete frente a la cámara.
-4. Verificar en consola el mensaje `Detección actual: CARRO (LED Rojo ON)` o `MOTO (LED Verde ON)`, y que el LED físico correspondiente se enciende.
+4. Verificar en consola el mensaje `Detección actual: CARRO (LED Rojo ON)` o `MOTO (LED amarillo ON)`, y que el LED físico correspondiente se enciende.
 
 ---
 
 ## 📊 Resultados
 
 - **Carro de juguete:** detectado como `car` con confianza de hasta **0.81**. LED rojo encendido de forma consistente.
-- **Moto de juguete:** detectada como `motorcycle` con confianza de **0.32–0.42** (menor por el tamaño reducido del objeto). LED verde encendido correctamente.
+- **Moto de juguete:** detectada como `motorcycle` con confianza de **0.32–0.42** (menor por el tamaño reducido del objeto). LED amarillo encendido correctamente.
 - Solo un LED permanece encendido a la vez, respetando la lógica de exclusión mutua del firmware.
 
 Evidencia fotográfica y en video disponible en [`/evidencias`](./evidencias).
